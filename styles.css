@@ -1,0 +1,158 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #000000;
+}
+.logo {
+    height: 20px; /* Ajusta el tamaño según sea necesario */
+    width: 295px;  /* Mantiene la proporción del logo */
+    height: 94px;
+    display: flex;
+    justify-content: right;
+    margin-right: 600px;
+    vertical-align: middle; /* Alinea verticalmente con los enlaces del menú */
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #FECD06;
+}
+
+.banner {
+    background-image: url(img/tu-imagen-de-fondo.jpg.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #ffffff;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura semi-transparente */
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #FECD06; 
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button.secondary {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #FECD06;
+    color: black;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.social-icon .icon {
+    margin: 0 10px;
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icon .icon:hover {
+    transform: translateY(-5px);
+}
+
+.text {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        padding: 10px;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}
